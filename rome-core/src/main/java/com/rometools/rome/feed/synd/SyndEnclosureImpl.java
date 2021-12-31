@@ -104,7 +104,6 @@ public class SyndEnclosureImpl implements Serializable, SyndEnclosure {
 
     /**
      * Returns the enclosure URL.
-     * <p/>
      *
      * @return the enclosure URL, <b>null</b> if none.
      */
@@ -115,7 +114,6 @@ public class SyndEnclosureImpl implements Serializable, SyndEnclosure {
 
     /**
      * Sets the enclosure URL.
-     * <p/>
      *
      * @param url the enclosure URL to set, <b>null</b> if none.
      */
@@ -126,7 +124,6 @@ public class SyndEnclosureImpl implements Serializable, SyndEnclosure {
 
     /**
      * Returns the enclosure length.
-     * <p/>
      *
      * @return the enclosure length, <b>null</b> if none.
      */
@@ -137,7 +134,6 @@ public class SyndEnclosureImpl implements Serializable, SyndEnclosure {
 
     /**
      * Sets the enclosure length.
-     * <p/>
      *
      * @param length the enclosure length to set, <b>null</b> if none.
      */
@@ -148,7 +144,6 @@ public class SyndEnclosureImpl implements Serializable, SyndEnclosure {
 
     /**
      * Returns the enclosure type.
-     * <p/>
      *
      * @return the enclosure type, <b>null</b> if none.
      */
@@ -159,7 +154,6 @@ public class SyndEnclosureImpl implements Serializable, SyndEnclosure {
 
     /**
      * Sets the enclosure type.
-     * <p/>
      *
      * @param type the enclosure type to set, <b>null</b> if none.
      */

@@ -34,7 +34,6 @@ import com.rometools.rome.io.FeedException;
 
 /**
  * Feed Generator for RSS 0.91
- * <p/>
  */
 public class RSS091UserlandGenerator extends RSS090Generator {
 

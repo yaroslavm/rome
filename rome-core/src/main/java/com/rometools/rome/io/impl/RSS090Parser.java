@@ -128,13 +128,12 @@ public class RSS090Parser extends BaseWireFeedParser {
     }
 
     /**
-     * Parses the root element of an RSS document into a Channel bean.
-     * <p/>
-     * It reads title, link and description and delegates to parseImage, parseItems and
+     * <p>Parses the root element of an RSS document into a Channel bean.</p>
+     * 
+     * <p>It reads title, link and description and delegates to parseImage, parseItems and
      * parseTextInput. This delegation always passes the root element of the RSS document as
      * different RSS version may have this information in different parts of the XML tree (no
-     * assumptions made thanks to the specs variaty)
-     * <p/>
+     * assumptions made thanks to the specs variaty)</p>
      *
      * @param rssRoot the root element of the RSS document to parse.
      * @return the parsed Channel bean.

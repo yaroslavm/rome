@@ -31,7 +31,6 @@ import com.rometools.rome.io.ModuleGenerator;
 
 /**
  * Feed Generator for SY ModuleImpl
- * <p/>
  */
 public class SyModuleGenerator implements ModuleGenerator {
 

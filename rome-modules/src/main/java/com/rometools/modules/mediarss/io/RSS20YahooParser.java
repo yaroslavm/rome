@@ -44,10 +44,10 @@ public class RSS20YahooParser extends RSS20Parser {
     }
 
     /**
-     * Indicates if a JDom document is an RSS instance that can be parsed with the parser.
-     * <p/>
-     * It checks for RDF ("http://www.w3.org/1999/02/22-rdf-syntax-ns#") and RSS
-     * ("http://purl.org/rss/1.0/") namespaces being defined in the root element.
+     * <p>Indicates if a JDom document is an RSS instance that can be parsed with the parser.</p>
+     * 
+     * <p>It checks for RDF ("http://www.w3.org/1999/02/22-rdf-syntax-ns#") and RSS
+     * ("http://purl.org/rss/1.0/") namespaces being defined in the root element.</p>
      *
      * @param document document to check if it can be parsed with this parser implementation.
      * @return <b>true</b> if the document is RSS1., <b>false</b> otherwise.

@@ -24,7 +24,6 @@ import com.rometools.rome.feed.rss.Item;
 
 /**
  * Feed Generator for RSS 0.94
- * <p/>
  */
 
 public class RSS094Generator extends RSS093Generator {

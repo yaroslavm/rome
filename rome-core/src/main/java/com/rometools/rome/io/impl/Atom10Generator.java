@@ -45,7 +45,6 @@ import com.rometools.utils.Lists;
 
 /**
  * Feed Generator for Atom
- * <p/>
  */
 public class Atom10Generator extends BaseWireFeedGenerator {
 

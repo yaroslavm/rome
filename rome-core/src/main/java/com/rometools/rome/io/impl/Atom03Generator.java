@@ -39,9 +39,7 @@ import com.rometools.utils.Lists;
 
 /**
  * Feed Generator for Atom
- * <p/>
  */
-
 public class Atom03Generator extends BaseWireFeedGenerator {
 
     private static final String ATOM_03_URI = "http://purl.org/atom/ns#";
