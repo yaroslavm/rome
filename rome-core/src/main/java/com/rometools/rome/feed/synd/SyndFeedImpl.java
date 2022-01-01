@@ -141,7 +141,7 @@ public class SyndFeedImpl implements Serializable, SyndFeed {
      * with extended interfaces.
      * <p>
      *
-     * @param beanClass
+     * @param beanClass Type of the bean
      * @param convenienceProperties set containing the convenience properties of the SyndEntryImpl
      *            (the are ignored during cloning, check CloneableBean for details).
      *
@@ -171,6 +171,9 @@ public class SyndFeedImpl implements Serializable, SyndFeed {
      * Creates a SyndFeedImpl and populates all its properties out of the given RSS Channel or Atom
      * Feed properties, while optionally preserving the WireFeed for access via the
      * orignalWireFeed() method.
+     * 
+     * @param feed RSS Channel or the Atom Feed to populate the properties from
+     * @param preserveWireFeed Whether to preserve the {@link WireFeed}
      */
     public SyndFeedImpl(final WireFeed feed, final boolean preserveWireFeed) {
         this(SyndFeed.class, IGNORE_PROPERTIES);
@@ -291,11 +294,12 @@ public class SyndFeedImpl implements Serializable, SyndFeed {
     }
 
     /**
-     * Returns the WireFeed this SyndFeed was created from. Will return null if the original feed is
-     * not stored or if this SyndFeed was not created from a WireFeed. <br />
-     * Note: The wire feed returned here will NOT contain any modifications done on this SyndFeed
+     * <p>Returns the WireFeed this SyndFeed was created from. Will return null if the original feed is
+     * not stored or if this SyndFeed was not created from a WireFeed.</p>
+     * 
+     * <p>Note: The wire feed returned here will NOT contain any modifications done on this SyndFeed
      * since it was created. That is in contrast to the createWireFeed method, which will reflect
-     * the current state of the SyndFeed
+     * the current state of the SyndFeed</p>
      *
      * @return The WireFeed this was created from, or null
      *

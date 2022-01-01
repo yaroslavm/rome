@@ -118,10 +118,9 @@ public class SyndEntryImpl implements Serializable, SyndEntry {
      * with extended interfaces.
      * <p>
      *
-     * @param beanClass
+     * @param beanClass Type of the bean
      * @param convenienceProperties set containing the convenience properties of the SyndEntryImpl
      *            (the are ignored during cloning, check CloneableBean for details).
-     *
      */
     protected SyndEntryImpl(final Class<?> beanClass, final Set<String> convenienceProperties) {
         this.beanClass = beanClass;
@@ -148,7 +147,6 @@ public class SyndEntryImpl implements Serializable, SyndEntry {
     /**
      * Indicates whether some other object is "equal to" this one as defined by the Object equals()
      * method.
-     * <p>
      *
      * @param other he reference object with which to compare.
      * @return <b>true</b> if 'this' object is equal to the 'other' object.
