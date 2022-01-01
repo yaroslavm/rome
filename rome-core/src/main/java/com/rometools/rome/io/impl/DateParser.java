@@ -28,7 +28,7 @@ import java.util.TimeZone;
 /**
  * <p>A helper class that parses Dates out of Strings with date time in RFC822 and W3CDateTime formats
  * plus the variants Atom (0.3) and RSS (0.9, 0.91, 0.92, 0.93, 0.94, 1.0 and 2.0) specificators
- * added to those formats.</p
+ * added to those formats.</p>
  * 
  * <p>It uses the JDK java.text.SimpleDateFormat class attemtping the parse using a mask for each one
  * of the possible formats.</p>

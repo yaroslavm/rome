@@ -44,8 +44,6 @@ public class FeedParsers extends PluginManager<WireFeedParser> {
 
     /**
      * Creates a parser instance.
-     * <p>
-     *
      */
     public FeedParsers() {
         super(FEED_PARSERS_KEY);
@@ -57,7 +55,6 @@ public class FeedParsers extends PluginManager<WireFeedParser> {
 
     /**
      * Finds the real parser type for the given document feed.
-     * <p>
      *
      * @param document document feed to find the parser for.
      * @return the parser for the given document or <b>null</b> if there is no parser for that
