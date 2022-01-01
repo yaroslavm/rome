@@ -195,7 +195,6 @@ public class RSS090Parser extends BaseWireFeedParser {
      * This method exists because RSS0.90 and RSS1.0 have the 'item' elements under the root
      * elemment. And RSS0.91, RSS0.02, RSS0.93, RSS0.94 and RSS2.0 have the item elements under the
      * 'channel' element.
-     * <p/>
      */
     protected List<Element> getItems(final Element rssRoot) {
         return rssRoot.getChildren("item", getRSSNamespace());
@@ -205,7 +204,6 @@ public class RSS090Parser extends BaseWireFeedParser {
      * This method exists because RSS0.90 and RSS1.0 have the 'image' element under the root
      * elemment. And RSS0.91, RSS0.02, RSS0.93, RSS0.94 and RSS2.0 have it under the 'channel'
      * element.
-     * <p/>
      */
     protected Element getImage(final Element rssRoot) {
         return rssRoot.getChild("image", getRSSNamespace());
@@ -215,17 +213,15 @@ public class RSS090Parser extends BaseWireFeedParser {
      * This method exists because RSS0.90 and RSS1.0 have the 'textinput' element under the root
      * elemment. And RSS0.91, RSS0.02, RSS0.93, RSS0.94 and RSS2.0 have it under the 'channel'
      * element.
-     * <p/>
      */
     protected Element getTextInput(final Element rssRoot) {
         return rssRoot.getChild("textinput", getRSSNamespace());
     }
 
     /**
-     * Parses the root element of an RSS document looking for image information.
-     * <p/>
-     * It reads title and url out of the 'image' element.
-     * <p/>
+     * <p>Parses the root element of an RSS document looking for image information.</p>
+     * 
+     * <p>It reads title and url out of the 'image' element.</p>
      *
      * @param rssRoot the root element of the RSS document to parse for image information.
      * @return the parsed image bean.
@@ -261,12 +257,11 @@ public class RSS090Parser extends BaseWireFeedParser {
     }
 
     /**
-     * Parses the root element of an RSS document looking for all items information.
-     * <p/>
-     * It iterates through the item elements list, obtained from the getItems() method, and invoke
+     * <p>Parses the root element of an RSS document looking for all items information.</p>
+     * 
+     * <p>It iterates through the item elements list, obtained from the getItems() method, and invoke
      * parseItem() for each item element. The resulting RSSItem of each item element is stored in a
-     * list.
-     * <p/>
+     * list.</p>
      *
      * @param rssRoot the root element of the RSS document to parse for all items information.
      * @return a list with all the parsed RSSItem beans.
@@ -280,10 +275,9 @@ public class RSS090Parser extends BaseWireFeedParser {
     }
 
     /**
-     * Parses an item element of an RSS document looking for item information.
-     * <p/>
-     * It reads title and link out of the 'item' element.
-     * <p/>
+     * <p>Parses an item element of an RSS document looking for item information.</p>
+     * 
+     * <p>It reads title and link out of the 'item' element.</p>
      *
      * @param rssRoot the root element of the RSS document in case it's needed for context.
      * @param eItem the item element to parse.
@@ -328,10 +322,9 @@ public class RSS090Parser extends BaseWireFeedParser {
     }
 
     /**
-     * Parses the root element of an RSS document looking for text-input information.
-     * <p/>
-     * It reads title, description, name and link out of the 'textinput' or 'textInput' element.
-     * <p/>
+     * <p>Parses the root element of an RSS document looking for text-input information.</p>
+     * 
+     * <p>It reads title, description, name and link out of the 'textinput' or 'textInput' element.</p>
      *
      * @param rssRoot the root element of the RSS document to parse for text-input information.
      * @return the parsed RSSTextInput bean.

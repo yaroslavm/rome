@@ -42,11 +42,10 @@ public interface ModuleGenerator {
     public String getNamespaceUri();
 
     /**
-     * Returns a set with all the URIs (JDOM Namespace elements) this module generator uses.
-     * <p/>
-     * It is used by the the feed generators to add their namespace definition in the root element
-     * of the generated document (forward-missing of Java 5.0 Generics).
-     * <p/>
+     * <p>Returns a set with all the URIs (JDOM Namespace elements) this module generator uses.</p>
+     * 
+     * <p>It is used by the the feed generators to add their namespace definition in the root element
+     * of the generated document (forward-missing of Java 5.0 Generics).</p>
      *
      * @return a set with all the URIs (JDOM Namespace elements) this module generator uses.
      */

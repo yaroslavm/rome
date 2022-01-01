@@ -62,11 +62,10 @@ public class RSS091UserlandParser extends RSS090Parser {
     }
 
     /**
-     * Parses the root element of an RSS document into a Channel bean.
-     * <p/>
-     * It first invokes super.parseChannel and then parses and injects the following properties if
-     * present: language, pubDate, rating and copyright.
-     * <p/>
+     * <p>Parses the root element of an RSS document into a Channel bean.</p>
+     * 
+     * <p>It first invokes super.parseChannel and then parses and injects the following properties if
+     * present: language, pubDate, rating and copyright.</p>
      *
      * @param rssRoot the root element of the RSS document to parse.
      * @return the parsed Channel bean.
@@ -147,11 +146,10 @@ public class RSS091UserlandParser extends RSS090Parser {
     }
 
     /**
-     * Parses the root element of an RSS document looking for image information.
-     * <p/>
-     * It first invokes super.parseImage and then parses and injects the following properties if
-     * present: url, link, width, height and description.
-     * <p/>
+     * <p>Parses the root element of an RSS document looking for image information.</p>
+     * 
+     * <p>It first invokes super.parseImage and then parses and injects the following properties if
+     * present: url, link, width, height and description.</p>
      *
      * @param rssRoot the root element of the RSS document to parse for image information.
      * @return the parsed RSSImage bean.
@@ -248,11 +246,10 @@ public class RSS091UserlandParser extends RSS090Parser {
     }
 
     /**
-     * Parses an item element of an RSS document looking for item information.
-     * <p/>
-     * It first invokes super.parseItem and then parses and injects the description property if
-     * present.
-     * <p/>
+     * <p>Parses an item element of an RSS document looking for item information.</p>
+     * 
+     * <p>It first invokes super.parseItem and then parses and injects the description property if
+     * present.</p>
      *
      * @param rssRoot the root element of the RSS document in case it's needed for context.
      * @param eItem the item element to parse.

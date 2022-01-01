@@ -66,10 +66,10 @@ public class History extends SSEModule {
     }
 
     /**
-     * Get the date-time when the most recent modification took place.
-     * <p/>
-     * This is the date-time when the most recent modification took place. If this attribute is
-     * omitted the value defaults to the earliest time representable in RFC 822.
+     * <p>Get the date-time when the most recent modification took place.</p>
+     * 
+     * <p>This is the date-time when the most recent modification took place. If this attribute is
+     * omitted the value defaults to the earliest time representable in RFC 822.</p>
      *
      * @return the date-time when the most recent modification took place.
      */
@@ -79,9 +79,9 @@ public class History extends SSEModule {
     }
 
     /**
-     * Set the date-time when the most recent modification took place.
-     * <p/>
-     * Either or both of the when or by attributes MUST be present; it is invalid to have neither.
+     * <p>Set the date-time when the most recent modification took place.</p>
+     * 
+     * <p>Either or both of the when or by attributes MUST be present; it is invalid to have neither.</p>
      *
      * @param when the date-time when the most recent modification took place.
      */
@@ -90,15 +90,15 @@ public class History extends SSEModule {
     }
 
     /**
-     * Provides access to a text attribute identifying the unique endpoint that made the most recent
+     * <p>Provides access to a text attribute identifying the unique endpoint that made the most recent
      * modification. This SHOULD be some combination of user and device (so that a given user can
      * edit a feed on multiple devices). This attribute is used programmatically to break ties in
-     * case two changes happened at the same time (within the same second).
-     * <p/>
-     * Either or both of the when or by must be present; it is invalid to have neither.
-     * <p/>
-     * If this attribute is omitted the value defaults to the empty string (which must be less than
-     * all other values for purposes of collation).
+     * case two changes happened at the same time (within the same second).</p>
+     * 
+     * <p>Either or both of the when or by must be present; it is invalid to have neither.</p>
+     * 
+     * <p>If this attribute is omitted the value defaults to the empty string (which must be less than
+     * all other values for purposes of collation).</p>
      *
      * @return A text attribute identifying the unique endpoint that made the most recent
      *         modification.
@@ -108,9 +108,9 @@ public class History extends SSEModule {
     }
 
     /**
-     * Sets the endpoint that made the most recent modification.
-     * <p/>
-     * Either or both of the when or by attributes MUST be present; it is invalid to have neither.
+     * <p>Sets the endpoint that made the most recent modification.</p>
+     * 
+     * <p>Either or both of the when or by attributes MUST be present; it is invalid to have neither.</p>
      *
      * @param by the endpoint that made the most recent modification.
      */
