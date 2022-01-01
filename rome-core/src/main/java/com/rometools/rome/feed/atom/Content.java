@@ -127,6 +127,7 @@ public class Content implements Cloneable, Serializable {
      * The type indicates how the value was/will-be encoded in the XML feed.
      * </p>
      *
+     * @return Type of the feed
      * @since Atom 1.0
      */
     public String getType() {
@@ -139,6 +140,7 @@ public class Content implements Cloneable, Serializable {
      * The type indicates how the value was/will-be encoded in the XML feed.
      * </p>
      *
+     * @param type Type of the feed
      * @since Atom 1.0
      */
     public void setType(final String type) {

@@ -69,6 +69,8 @@ public class CloneableBean {
      * <p>
      * To be used by classes using CloneableBean in a delegation pattern,
      *
+     * @param obj Object to clone
+     * @param ignoreProperties Properties that should not be cloned
      * @return a clone of the object bean.
      * @throws CloneNotSupportedException thrown if the object bean could not be cloned.
      *

@@ -428,6 +428,8 @@ public interface SyndEntry extends Cloneable, CopyFrom, Extendable {
     /**
      * Returns the first instance of a SyndLink with the specified relation, or null
      *
+     * @param The relation to search for
+     * @return First instance of a SyndLink with the specified relation or <code>null</code>
      */
     public SyndLink findRelatedLink(String relation);
 

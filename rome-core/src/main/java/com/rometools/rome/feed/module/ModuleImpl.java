@@ -33,8 +33,9 @@ public abstract class ModuleImpl implements Cloneable, Serializable, Module {
     private final String uri;
 
     /**
-     * @param uri URI of the module.
-     *
+     * Constructor.
+     * @param beanClass Type of the bean
+     * @param uri URI of the module
      */
     protected ModuleImpl(final Class<?> beanClass, final String uri) {
         this.beanClass = beanClass;

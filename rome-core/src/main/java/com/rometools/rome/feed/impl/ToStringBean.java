@@ -51,8 +51,9 @@ public class ToStringBean {
      * It uses the Class name as the prefix.
      * <p>
      *
+     * @param beanClass Type of the object
+     * @param obj Object to create the String representation for
      * @return bean object String representation.
-     *
      */
     public static String toString(Class<?> beanClass, Object obj) {
         Stack<String[]> stack = PREFIX_TL.get();

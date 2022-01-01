@@ -50,9 +50,10 @@ public class ModuleUtils {
     }
 
     /**
-     *
-     *
-     * @since 1.5 Changed to return the first, not the last.
+     * Extracts the first module with matching URI.
+     * @param modules Modules to examine
+     * @param uri URI to search for
+     * @return First matching module or <code>null</code>
      */
     public static Module getModule(final List<Module> modules, final String uri) {
         Module searchedModule = null;

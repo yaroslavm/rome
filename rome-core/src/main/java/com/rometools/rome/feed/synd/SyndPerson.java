@@ -25,38 +25,49 @@ import com.rometools.rome.feed.module.Extendable;
 public interface SyndPerson extends Cloneable, Extendable {
 
     /**
-     * Returns name of person
+     * Returns name of person.
+     * 
+     * @return Name of the person
      */
     public String getName();
 
     /**
      * Sets name of person.
+     * 
+     *  @param name Name of the person
      */
     public void setName(String name);
 
     /**
      * Returns URI of person.
+     * 
+     * @return URI of person
      */
     public String getUri();
 
     /**
      * Sets URI of person.
+     * 
+     * @param uri URI of person
      */
     public void setUri(String uri);
 
     /**
-     * Returns email of person.
+     * Returns E-Mail of person.
+     * 
+     * @return E-Mail of person
      */
     public String getEmail();
 
     /**
-     * Sets email of person.
+     * Sets E-Mail of person.
+     * 
+     * @param email E-Mail of Person
      */
     public void setEmail(String email);
 
     /**
      * Creates a deep clone of the object.
-     * <p>
      *
      * @return a clone of the object.
      * @throws CloneNotSupportedException thrown if an element of the object cannot be cloned.

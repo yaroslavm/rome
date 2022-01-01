@@ -69,6 +69,8 @@ public interface SyndCategory extends Cloneable, CopyFrom {
 
     /**
      * Returns the category label, <b>null</b> if none
+     * 
+     * @return Category label
      */
     String getLabel();
 

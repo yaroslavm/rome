@@ -41,6 +41,7 @@ public class EqualsBean {
      * <p>
      * To be used by classes using EqualsBean in a delegation pattern,
      *
+     * @param beanClass Type of the bean
      * @param obj1 The reference object with which to compare.
      * @param obj2 The object to which to compare.
      * @return <b>true</b> if the object passed in the constructor is equal to the 'obj' object.
@@ -92,6 +93,7 @@ public class EqualsBean {
      * <p>
      * To be used by classes using EqualsBean in a delegation pattern,
      *
+     * @param obj Object to create the hashCode for
      * @return the hashcode of the bean object.
      *
      */
