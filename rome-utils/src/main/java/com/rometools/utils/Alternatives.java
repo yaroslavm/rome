@@ -22,6 +22,7 @@ public final class Alternatives {
     /**
      * Returns the first object that is not null
      *
+     * @param <T> Type of the objects
      * @param objects The objects to process
      * @return The first value that is not null. null when there is no not-null value
      */
